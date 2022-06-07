@@ -8,6 +8,10 @@ import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './nav/nav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { HomeComponent } from './home/home.component';
+
 
 
 @NgModule({
@@ -17,11 +21,15 @@ import { NavComponent } from './nav/nav.component';
     EducationComponent,
     ContactComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    CarouselModule.forRoot(),
+    
   
   ],
   providers: [],
